@@ -1,16 +1,14 @@
 ---
 name: xuebang-data-skill
 description: |
-  查看学邦 EDU.BOSS 今日数据。用于登录学邦后台并读取首页今日经营数据与待办数据。
+  查看学邦数据。用于登录学邦后台并读取首页今日经营数据与待办数据。
   Use this skill when the user wants to:
   - 查看学邦今日数据
-  - 查看学邦今日
   - 查看学邦数据
   - 学邦今日数据
   - 学邦数据
-  - 查看 EDU.BOSS 今日数据
   - 查看校区今日经营数据
-  Triggers: 学邦，EDU.BOSS, 今日数据，经营数据，待办数据，校区数据
+  Triggers: 学邦, 今日数据，经营数据，待办数据，校区数据
 version: 1.0.1
 author: local
 allowed-tools:
@@ -80,7 +78,7 @@ allowed-tools:
    - 密码输入框：文本为 "请输入您的密码"
    - 登录按钮：文本为 "登 录"
 
-4. **填写账号密码（关键步骤）**
+4. **直接填写账号密码（关键步骤）**
    ```
    browser action="act" request={"kind": "type", "ref": "<账号输入框 ref>", "text": "{账号}"}
    browser action="act" request={"kind": "type", "ref": "<密码输入框 ref>", "text": "{密码}"}
@@ -157,5 +155,3 @@ allowed-tools:
 - **解决**：重新执行 `snapshot` 获取最新 ref
 
 ---
-
-*最后更新：2026-03-22*
